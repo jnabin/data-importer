@@ -1,18 +1,99 @@
 .primary-sidebar{
+    padding-top: 13.5px;
     flex-direction: column;
     gap: 15px;
     width: 84px;
+    border-right: 1px solid #F0F0F3;
+    .profile{
+        margin-top: 50px;
+        .pp-section{
+            display: inline-block;
+            padding: 3px;
+            .abs-img{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+    }
     .side-item{
         text-align: center;
         span{
+            border-radius: 4px;
+            cursor: pointer;
             padding: 12px 16px;
             display: inline-block;
         }
-
+        span:hover{
+            background: linear-gradient(0deg, rgba(94, 129, 244, 0.1), rgba(94, 129, 244, 0.1)), #FFFFFF;
+            transition: 1s ease-in-out;
+        }
         &.select{
+            border-right: 2px solid #063622;
             span{
                 background: linear-gradient(0deg, rgba(94, 129, 244, 0.1), rgba(94, 129, 244, 0.1)), #FFFFFF;
                 border-radius: 4px;
+            }
+        }
+    }
+}
+.secondary-sidebar{
+    border-right: 1px solid #F0F0F3;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+    .first-section{
+        display: flex;
+        flex-direction: column;
+        padding-top: 12px;
+        gap: 2px;
+        .item{
+            cursor: pointer;
+            text-align: center;
+            padding: 18px 0px 10px 0px;
+        }
+        .option{
+            cursor: pointer;
+            background: #FAFAFA;
+            p{
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                margin-top: 6px;
+            }
+            &.select{
+                background: linear-gradient(0deg, rgba(94, 129, 244, 0.1), rgba(94, 129, 244, 0.1)), #FFFFFF;
+                p{
+                    font-weight: 500;
+                    color: #5E81F4;
+                }
+            }
+        }
+
+        .option:hover{
+            background: linear-gradient(0deg, rgba(94, 129, 244, 0.1), rgba(94, 129, 244, 0.1)), #FFFFFF;
+            p{
+                font-weight: 500;
+                color: #5E81F4;
+            }
+        }
+    }
+    .second-section{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #ECECF2;
+        border-radius: 8px;
+        margin: 0px 10px;
+        .item{
+            text-align: center;
+            border-bottom: 1px solid #ECECF2;
+            padding: 25px 0px 10px 0px;
+            p{
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                color: #1C1D21;
+                margin-top: 6px;
             }
         }
     }

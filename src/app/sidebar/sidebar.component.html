@@ -16,7 +16,7 @@
             </span>
         </div>
         <div class="side-item select">
-            <span>
+            <span (click)="isSecondarySideOpen = !isSecondarySideOpen">
                 <img src="/assets/images/checked.svg" alt="" srcset="">
             </span>
         </div>
@@ -60,6 +60,53 @@
                 <img src="/assets/images/question.svg" alt="" srcset="">
             </span>
         </div>
+        <div class="profile text-center">
+            <span class="pp-section position-relative">
+                <img class="profile-img" src="/assets/images/userProfile.svg" alt="" srcset="">
+                <img *ngIf="!isActive" class="abs-img" src="/assets/images/not-active.svg" alt="" srcset="">
+                <img *ngIf="isActive" class="abs-img" src="/assets/images/active.svg" alt="" srcset="">
+            </span>
+        </div>
     </div>
-    <div></div>
+    <div *ngIf="isSecondarySideOpen" class="d-flex secondary-sidebar">
+        <div class="first-section">
+            <div class="item back-side pb-4">
+                <img (click)="isSecondarySideOpen = !isSecondarySideOpen" src="/assets/images/back-side.svg" alt="" srcset="">
+            </div>
+            <div class="item option select">
+                <img src="/assets/images/list.svg" alt="" srcset="">
+                <p>One time</p>
+            </div>
+            <div class="item option">
+                <img src="/assets/images/map.svg" alt="" srcset="">
+                <p>Recurring</p>
+            </div>
+            <div class="item option">
+                <img src="/assets/images/membership.svg" alt="" srcset="">
+                <p>Membership</p>
+            </div>
+            <div class="item option">
+                <img src="/assets/images/graph.svg" alt="" srcset="">
+                <p>Donators</p>
+            </div>
+            <div class="item option">
+                <img src="/assets/images/snapshot.svg" alt="" srcset="">
+                <p>Snapshot</p>
+            </div>
+        </div>
+        <div class="second-section">
+            <div class="item">
+                <img src="/assets/images/edit.svg" alt="" srcset="">
+                <p>Personal</p>
+            </div>
+            <div class="item">
+                <img src="/assets/images/edit.svg" alt="" srcset="">
+                <p>Business</p>
+            </div>
+            <div class="item">
+                <img src="/assets/images/edit.svg" alt="" srcset="">
+                <p>Manage</p>
+            </div>
+        </div>
+    </div>
 </div>

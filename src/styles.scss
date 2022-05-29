@@ -4,4 +4,7 @@
 @import './assets/styles/variable';
 
 html, body { height: 100%; }
+img{
+    max-width: 100%;
+}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

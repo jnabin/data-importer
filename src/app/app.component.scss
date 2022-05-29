@@ -1,5 +1,8 @@
 .sidebar{
-    width: 190px;
+    max-width: 190px;
+    position: fixed;
+    overflow-y: auto;
+    height: 100vh;
 }
 
 .content{

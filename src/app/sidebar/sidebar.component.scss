@@ -1,5 +1,5 @@
 .primary-sidebar{
-    padding-top: 13.5px;
+    padding-top: 7px;
     flex-direction: column;
     gap: 15px;
     width: 84px;
@@ -42,10 +42,13 @@
     flex-direction: column;
     width: 105px;
     justify-content: space-between;
+    .back-side{
+        border-bottom: 1px solid #ECECF2;
+    }
     .first-section{
         display: flex;
         flex-direction: column;
-        padding-top: 12px;
+        padding-top: 6px;
         gap: 2px;
         .item{
             cursor: pointer;

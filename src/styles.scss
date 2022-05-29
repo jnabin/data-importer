@@ -3,9 +3,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
 @import './assets/styles/variable';
 
-html, body { height: 100%; font-family: 'Lato', sans-serif; }
+html, body { height: 100%; font-family: 'Lato', sans-serif; color: #1C1D21; }
 img{
     max-width: 100%;
+}
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: rgb(157, 157, 157); 
+border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: rgb(131, 131, 131); 
 }
 p{
     margin-bottom: 0;
